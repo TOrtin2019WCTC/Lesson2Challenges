@@ -35,6 +35,7 @@ public class Room {
         return area;
     }
     
+    @Override
     public String toString(){
         return ("Room # " + roomNum + "\nArea: " + getArea());
     }
