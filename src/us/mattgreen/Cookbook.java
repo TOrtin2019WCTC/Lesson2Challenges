@@ -55,7 +55,7 @@ public class Cookbook {
     public void printAllMeals() {
         for (Meal item : meals) {
             if (item != null) {
-                System.out.println(item);
+                System.out.println(item.toString());
             }
         }
     }
