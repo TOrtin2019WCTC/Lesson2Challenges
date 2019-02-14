@@ -135,7 +135,7 @@ public class Main {
         while ((line = indata.fileReadLine()) != null) {
             String[] fields = line.split(",");
          
-            if(fields[0].equals(currentMealType) && mealList.size() > 0) {
+            if(!fields[0].equals(currentMealType) && mealList.size() > 0) {
                 
                 for (Meal m : mealList){
                     calorieTotal += m.getCalories();
